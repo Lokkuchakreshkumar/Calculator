@@ -4,47 +4,88 @@
   box-sizing: border-box;
 }
 body {
-  background-color: rgb(255, 255, 255);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background: linear-gradient(to right, #121212, #1f1f1f);
+}
+h1 {
+  color: #fff;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 .container {
   width: 20rem;
   margin-top: 0.8rem;
-  height: 26rem;
+  height: 32rem;
   display: flex;
   flex-wrap: wrap;
   padding: 1rem;
-  gap: 0;
+  border-radius: 0.5rem;
+  justify-content: center;
+  background-color: #242424;
 }
 input {
   width: 100%;
   border: none;
-  background-color: inherit;
+  height: 3rem;
+  background-color: #252525;
+  color: #00ff99;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
 }
 .input {
   flex-grow: 1;
-  height: 4rem;
+  height: 5rem;
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
   width: 20;
-
-  border-top-left-radius: 1rem;
-  border-top-right-radius: 1rem;
+  border: 1px solid black;
+  border-radius: 0.3rem;
 }
-
+.num {
+  background-color: #2b2b2b;
+  color: #00ff99;
+  font-size: 1.2rem;
+}
+.operators {
+  background-color: #ff7b00;
+  font-size: 1.2rem;
+}
+.operators:hover {
+  background-color: #f6b171;
+}
+.previous {
+  background-color: #b71c1c;
+  font-size: 0.7rem;
+}
+.previous:hover {
+  background-color: #d1a5a5;
+}
 input:focus {
   border: none;
   outline: none;
 }
+input::selection {
+  background-color: #d2ffed;
+  color: black;
+}
 .buttons {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
 }
 .buttons button {
-  width: 6rem;
-  height: 5rem;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  border: none;
+
+  border: 2px solid rgba(0, 0, 0, 0.4);
+}
+button:hover {
+  background-color: #caefe1;
+  cursor: pointer;
 }
